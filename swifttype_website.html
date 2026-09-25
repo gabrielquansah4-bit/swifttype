@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwiftType | Typing & Data Services</title>
+<meta name="description" content="Fast, accurate typing, document conversion, data entry and formatting services.">
+<style>
+:root{--ink:#122033;--blue:#2563eb;--blue2:#1d4ed8;--light:#f5f8ff;--muted:#64748b;--white:#fff;--line:#e2e8f0}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:800;color:var(--blue)}.logo span{color:var(--ink)}nav{display:flex;gap:26px;align-items:center}nav a{font-weight:600;font-size:14px}
+.btn{display:inline-block;background:var(--blue);color:white;padding:12px 20px;border-radius:9px;font-weight:700;border:0;cursor:pointer}.btn:hover{background:var(--blue2)}
+.btn.whatsapp{background:#16a34a}.btn.whatsapp:hover{background:#15803d}.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.hero{background:linear-gradient(135deg,#eef5ff,#fff);padding:90px 0 80px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:7px 12px;border-radius:999px;font-weight:700;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-2px;margin-bottom:22px}.hero p{font-size:19px;color:var(--muted);max-width:650px;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 18px 45px rgba(30,64,175,.1)}
+.card h3{margin-bottom:12px;font-size:22px}.check{display:flex;gap:10px;margin:13px 0;color:#334155}.check b{color:#16a34a}
+section{padding:78px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.section-head h2{font-size:36px;margin-bottom:10px}.section-head p{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service{padding:25px;border:1px solid var(--line);border-radius:15px}.icon{font-size:30px;margin-bottom:10px}.service h3{margin-bottom:7px}.service p{color:var(--muted);font-size:15px}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.price{border:1px solid var(--line);border-radius:15px;padding:26px}.price strong{font-size:30px}.price small{color:var(--muted)}.price ul{list-style:none;margin:18px 0}.price li{margin:8px 0;color:#475569}
+.how{background:var(--light)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{text-align:center}.num{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;margin:0 auto 12px;font-weight:800}
+.order{background:#0f1f38;color:#fff}.order .section-head p{color:#cbd5e1}.form{background:#fff;color:var(--ink);border-radius:18px;padding:30px;max-width:760px;margin:auto}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;margin-bottom:16px}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}
+.contact{text-align:center}.contact p{color:var(--muted);margin:8px 0}.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+footer{background:#091426;color:#cbd5e1;padding:28px 0;text-align:center;font-size:14px}
+@media(max-width:800px){nav a:not(.btn){display:none}.hero-grid,.services,.price-grid,.steps{grid-template-columns:1fr}.hero{padding:65px 0}.row{grid-template-columns:1fr}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="logo" href="#">Swift<span>Type</span></a>
+<nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how">How It Works</a><a class="btn" href="#order">Order Now</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid"><div>
+<span class="badge">REMOTE TYPING & DATA SERVICES</span>
+<h1>Your documents. Typed accurately. Delivered on time.</h1>
+<p>Professional typing, document conversion, data entry and formatting for students, professionals, businesses and individuals — wherever you are.</p>
+<div class="actions">
+<a class="btn" href="#order">Get a Quote</a>
+<a class="btn whatsapp" href="https://wa.me/233592416096?text=Hello%20SwiftType%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank">WhatsApp Us</a>
+</div></div>
+<div class="card"><h3>What we can help with</h3>
+<div class="check"><b>✓</b><span>PDF, image or scan to editable Word</span></div>
+<div class="check"><b>✓</b><span>Handwritten notes to digital documents</span></div>
+<div class="check"><b>✓</b><span>Excel data entry and formatting</span></div>
+<div class="check"><b>✓</b><span>CVs, reports and document formatting</span></div>
+<div class="check"><b>✓</b><span>Basic transcription and data cleanup</span></div>
+</div></div></section>
+
+<section id="services"><div class="container">
+<div class="section-head"><h2>Our Services</h2><p>Simple, reliable digital support for documents and data.</p></div>
+<div class="services">
+<div class="service"><div class="icon">📄</div><h3>Document Typing</h3><p>Convert PDFs, images, scans and handwritten notes into clean editable documents.</p></div>
+<div class="service"><div class="icon">📊</div><h3>Data Entry</h3><p>Accurate entry, organization and formatting of information in Excel and spreadsheets.</p></div>
+<div class="service"><div class="icon">📝</div><h3>CV & Resume Formatting</h3><p>Turn your information into a clean, professional and easy-to-read CV.</p></div>
+<div class="service"><div class="icon">📚</div><h3>Reports & Assignments</h3><p>Typing and formatting support for reports, school work and professional documents.</p></div>
+<div class="service"><div class="icon">🎧</div><h3>Basic Transcription</h3><p>Convert clear audio or recorded material into organized written text.</p></div>
+<div class="service"><div class="icon">🗂️</div><h3>Document Formatting</h3><p>Fix spacing, headings, tables, page layout and other presentation issues.</p></div>
+</div></div></section>
+
+<section id="pricing" style="background:#f8fafc"><div class="container">
+<div class="section-head"><h2>Starting Prices</h2><p>Final prices depend on document quality, complexity and turnaround time.</p></div>
+<div class="price-grid">
+<div class="price"><h3>Standard Typing</h3><strong>GH₵5+</strong><small> / page</small><ul><li>✓ Clear typed documents</li><li>✓ Basic formatting</li><li>✓ Word delivery</li></ul><a class="btn" href="#order">Request Quote</a></div>
+<div class="price"><h3>Handwritten</h3><strong>GH₵8+</strong><small> / page</small><ul><li>✓ Handwritten notes</li><li>✓ Careful formatting</li><li>✓ Editable Word file</li></ul><a class="btn" href="#order">Request Quote</a></div>
+<div class="price"><h3>CV Formatting</h3><strong>GH₵30+</strong><small> / CV</small><ul><li>✓ Professional layout</li><li>✓ Editable Word file</li><li>✓ PDF-ready version</li></ul><a class="btn" href="#order">Request Quote</a></div>
+</div></div></section>
+
+<section id="how" class="how"><div class="container">
+<div class="section-head"><h2>How It Works</h2><p>Send the work, receive a quote, and get your finished document.</p></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Send</h3><p>Tell us what you need and provide your document.</p></div>
+<div class="step"><div class="num">2</div><h3>Quote</h3><p>We review the work and confirm the price and deadline.</p></div>
+<div class="step"><div class="num">3</div><h3>Pay</h3><p>Make payment using the agreed payment method.</p></div>
+<div class="step"><div class="num">4</div><h3>Receive</h3><p>Your completed file is delivered digitally.</p></div>
+</div></div></section>
+
+<section id="order" class="order"><div class="container">
+<div class="section-head"><h2>Request a Quote</h2><p>Complete the form and your email app will open with the request ready to send.</p></div>
+<form class="form" onsubmit="sendOrder(event)">
+<div class="row">
+<div><label>Name</label><input id="name" required placeholder="Your name"></div>
+<div><label>Email</label><input id="email" type="email" required placeholder="you@example.com"></div>
+<div><label>WhatsApp / Phone</label><input id="phone" required placeholder="+233 ..."></div>
+<div><label>Service</label><select id="service"><option>Document Typing</option><option>Handwritten Notes</option><option>Data Entry</option><option>CV Formatting</option><option>Report / Assignment</option><option>Transcription</option><option>Other</option></select></div>
+<div class="full"><label>Project details</label><textarea id="details" required placeholder="Tell us the number of pages, file type, deadline and any special instructions."></textarea></div>
+</div>
+<button class="btn" type="submit">Submit Request by Email</button>
+<p id="status" style="margin-top:12px;color:#475569;font-size:14px"></p>
+</form></div></section>
+
+<section class="contact"><div class="container">
+<div class="section-head"><h2>Need something typed?</h2><p>Start with a quote. No complicated process.</p></div>
+<div class="contact-actions">
+<a class="btn" href="mailto:gabrielquansah4@gmail.com?subject=SwiftType%20Quote%20Request">Email Us</a>
+<a class="btn whatsapp" href="https://wa.me/233592416096?text=Hello%20SwiftType%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank">WhatsApp Us</a>
+</div>
+<p style="margin-top:18px">Email: <strong>gabrielquansah4@gmail.com</strong> &nbsp; | &nbsp; WhatsApp: <strong>+233 59 241 6096</strong></p>
+</div></section>
+</main>
+
+<footer>© 2026 SwiftType. Typing, data entry and document services.</footer>
+
+<script>
+function sendOrder(e){
+e.preventDefault();
+const name=document.getElementById('name').value;
+const email=document.getElementById('email').value;
+const phone=document.getElementById('phone').value;
+const service=document.getElementById('service').value;
+const details=document.getElementById('details').value;
+const subject=encodeURIComponent('SwiftType Quote Request - '+service);
+const body=encodeURIComponent(`Name: ${name}\nCustomer email: ${email}\nPhone/WhatsApp: ${phone}\nService: ${service}\n\nProject details:\n${details}`);
+window.location.href=`mailto:gabrielquansah4@gmail.com?subject=${subject}&body=${body}`;
+document.getElementById('status').textContent='Opening your email app...';
+}
+</script>
+</body>
+</html>
