@@ -6,352 +6,284 @@
 
   <title>Services | SwiftType</title>
 
-  <meta name="description"
-        content="Explore SwiftType professional typing, data entry, CV formatting, transcription and document formatting services.">
+  <meta
+    name="description"
+    content="Explore SwiftType typing, data entry, CV formatting, transcription and document formatting services."
+  >
 
   <style>
     * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #1f2937;
-      background: #ffffff;
+      font-family:Arial,Helvetica,sans-serif;
+      color:#1e293b;
+      background:#f8fafc;
+      line-height:1.6;
     }
 
     a {
-      text-decoration: none;
-      color: inherit;
+      text-decoration:none;
+      color:inherit;
     }
 
     .container {
-      width: 92%;
-      max-width: 1150px;
-      margin: auto;
+      width:92%;
+      max-width:1100px;
+      margin:auto;
     }
 
-    /* HEADER */
-
     header {
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background:#0f172a;
+      color:white;
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
 
     .nav {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
     }
 
     .logo {
-      font-size: 28px;
-      font-weight: 800;
-      color: #0f766e;
+      font-size:1.7rem;
+      font-weight:800;
+      color:#38bdf8;
     }
 
     .logo span {
-      color: #111827;
+      color:white;
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      list-style: none;
+    nav {
+      display:flex;
+      gap:20px;
+      align-items:center;
+      flex-wrap:wrap;
     }
 
-    .nav-links a {
-      font-size: 15px;
-      font-weight: 600;
-      color: #374151;
+    nav a {
+      color:#e2e8f0;
+      font-size:.94rem;
     }
 
-    .nav-links a:hover {
-      color: #0f766e;
+    nav a:hover {
+      color:#38bdf8;
     }
 
-    .nav-button {
-      background: #0f766e;
-      color: white !important;
-      padding: 11px 18px;
-      border-radius: 8px;
+    .nav-quote {
+      background:#38bdf8;
+      color:#082f49 !important;
+      padding:10px 16px;
+      border-radius:7px;
+      font-weight:bold;
     }
 
-    /* HERO */
-
-    .page-hero {
-      background: linear-gradient(135deg, #ecfdf5, #f8fafc);
-      padding: 85px 0;
-      text-align: center;
+    .hero {
+      background:linear-gradient(135deg,#020617,#164e63);
+      color:white;
+      text-align:center;
+      padding:90px 20px;
     }
 
-    .page-hero h1 {
-      font-size: clamp(40px, 6vw, 58px);
-      color: #111827;
-      margin-bottom: 18px;
+    .hero h1 {
+      font-size:clamp(2.4rem,6vw,4rem);
+      margin-bottom:15px;
     }
 
-    .page-hero h1 span {
-      color: #0f766e;
+    .hero p {
+      max-width:700px;
+      margin:auto;
+      color:#cbd5e1;
     }
 
-    .page-hero p {
-      max-width: 720px;
-      margin: auto;
-      font-size: 18px;
-      color: #4b5563;
+    section {
+      padding:75px 20px;
     }
 
-    /* SERVICES */
+    .section-title {
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .section-title h2 {
+      color:#0f172a;
+      margin-bottom:8px;
+    }
+
+    .section-title p {
+      color:#64748b;
+    }
 
     .services {
-      padding: 80px 0;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
     }
 
-    .section-heading {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 50px;
+    .card {
+      background:white;
+      padding:30px;
+      border-radius:12px;
+      border:1px solid #e2e8f0;
+      box-shadow:0 5px 20px rgba(15,23,42,.06);
     }
 
-    .section-heading h2 {
-      font-size: 38px;
-      color: #111827;
-      margin-bottom: 14px;
+    .number {
+      color:#0284c7;
+      font-weight:800;
+      font-size:.85rem;
+      margin-bottom:12px;
     }
 
-    .section-heading p {
-      color: #6b7280;
-      font-size: 17px;
+    .card h3 {
+      color:#0f172a;
+      margin-bottom:10px;
     }
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+    .card p {
+      color:#64748b;
+      font-size:.94rem;
     }
-
-    .service-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 15px;
-      padding: 32px;
-      background: white;
-      transition: 0.2s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.07);
-    }
-
-    .service-icon {
-      font-size: 38px;
-      margin-bottom: 18px;
-    }
-
-    .service-card h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: #111827;
-    }
-
-    .service-card p {
-      color: #6b7280;
-      margin-bottom: 18px;
-    }
-
-    .service-card ul {
-      padding-left: 20px;
-      color: #4b5563;
-    }
-
-    .service-card li {
-      margin-bottom: 7px;
-    }
-
-    /* WHO NEEDS US */
 
     .audience {
-      background: #f8fafc;
-      padding: 80px 0;
+      background:#e0f2fe;
     }
 
     .audience-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:20px;
     }
 
     .audience-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 25px;
-      text-align: center;
+      background:white;
+      padding:25px;
+      text-align:center;
+      border-radius:12px;
     }
 
     .audience-card h3 {
-      margin-top: 10px;
-      font-size: 18px;
+      margin-bottom:8px;
     }
 
     .audience-card p {
-      margin-top: 8px;
-      color: #6b7280;
-      font-size: 14px;
+      color:#64748b;
+      font-size:.9rem;
     }
 
-    /* CTA */
-
     .cta {
-      background: #ecfdf5;
-      padding: 75px 0;
-      text-align: center;
+      background:#0f172a;
+      color:white;
+      text-align:center;
     }
 
     .cta h2 {
-      font-size: 38px;
-      color: #111827;
-      margin-bottom: 14px;
+      margin-bottom:10px;
     }
 
     .cta p {
-      color: #4b5563;
-      max-width: 650px;
-      margin: 0 auto 25px;
+      color:#cbd5e1;
+      margin-bottom:25px;
     }
 
     .btn {
-      display: inline-block;
-      padding: 14px 23px;
-      border-radius: 9px;
-      font-weight: 700;
-      border: 2px solid transparent;
-      margin: 5px;
+      display:inline-block;
+      padding:13px 22px;
+      border-radius:8px;
+      font-weight:bold;
+      background:#38bdf8;
+      color:#082f49;
     }
 
-    .btn-primary {
-      background: #0f766e;
-      color: white;
+    .btn-outline {
+      border:1px solid #38bdf8;
+      color:white;
+      background:transparent;
+      margin-left:8px;
     }
-
-    .btn-primary:hover {
-      background: #115e59;
-    }
-
-    .btn-secondary {
-      border-color: #0f766e;
-      color: #0f766e;
-      background: white;
-    }
-
-    /* FOOTER */
 
     footer {
-      background: #111827;
-      color: #d1d5db;
-      padding: 45px 0 25px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 35px;
+      background:#020617;
+      color:#cbd5e1;
+      padding:35px 20px;
+      text-align:center;
     }
 
     footer h3 {
-      color: white;
-      margin-bottom: 12px;
+      color:#38bdf8;
+      margin-bottom:8px;
     }
 
-    footer p {
-      color: #9ca3af;
+    footer a:hover {
+      color:#38bdf8;
     }
 
-    .footer-links {
-      list-style: none;
+    .whatsapp-float {
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      background:#25D366;
+      color:white;
+      padding:14px 18px;
+      border-radius:50px;
+      font-weight:bold;
+      z-index:9999;
+      box-shadow:0 5px 18px rgba(0,0,0,.25);
     }
 
-    .footer-links li {
-      margin-bottom: 8px;
-    }
-
-    .footer-links a:hover {
-      color: white;
-    }
-
-    .copyright {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid #374151;
-      color: #9ca3af;
-      font-size: 14px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 900px) {
-
+    @media(max-width:850px) {
       .nav {
-        flex-direction: column;
-        padding: 15px 0;
+        flex-direction:column;
+        padding:15px 0;
       }
 
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .audience-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .page-hero {
-        padding: 60px 0;
+      nav {
+        justify-content:center;
+        gap:12px;
       }
 
       .services {
-        padding: 60px 0;
+        grid-template-columns:repeat(2,1fr);
       }
 
-      .services-grid,
-      .audience-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
+      .audience-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:600px) {
+      .services,
+      .audience-grid {
+        grid-template-columns:1fr;
       }
 
-      .page-hero h1 {
-        font-size: 42px;
+      .btn-outline {
+        margin-left:0;
+        margin-top:10px;
       }
 
-      .nav-links {
-        font-size: 14px;
+      .whatsapp-float {
+        width:52px;
+        height:52px;
+        padding:0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius:50%;
+        font-size:0;
+      }
+
+      .whatsapp-float::after {
+        content:"☏";
+        font-size:24px;
       }
     }
   </style>
@@ -360,208 +292,101 @@
 <body>
 
 <header>
-
   <div class="container nav">
 
     <a href="index.html" class="logo">
       Swift<span>Type</span>
     </a>
 
-    <ul class="nav-links">
-
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-
-      <li>
-        <a href="about.html">About</a>
-      </li>
-
-      <li>
-        <a href="services.html">Services</a>
-      </li>
-
-      <li>
-        <a href="pricing.html">Pricing</a>
-      </li>
-
-      <li>
-        <a href="faq.html">FAQ</a>
-      </li>
-
-      <li>
-        <a href="contact.html" class="nav-button">
-          Contact
-        </a>
-      </li>
-
-    </ul>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="nav-quote">Get a Quote</a>
+    </nav>
 
   </div>
-
 </header>
 
 
-<section class="page-hero">
+<section class="hero">
 
-  <div class="container">
+  <h1>Our Services</h1>
 
-    <h1>
-      Our <span>Services</span>
-    </h1>
-
-    <p>
-      Professional typing, data entry and document support
-      for individuals, students, professionals and organizations.
-    </p>
-
-  </div>
+  <p>
+    Professional typing, data and document support tailored
+    to your needs.
+  </p>
 
 </section>
 
 
-<section class="services">
+<section>
 
   <div class="container">
 
-    <div class="section-heading">
-
-      <h2>What We Do</h2>
-
-      <p>
-        Choose the service that matches your document or
-        administrative needs.
-      </p>
-
+    <div class="section-title">
+      <h2>What We Offer</h2>
+      <p>Choose the service that matches your task.</p>
     </div>
 
+    <div class="services">
 
-    <div class="services-grid">
-
-
-      <div class="service-card">
-
-        <div class="service-icon">⌨️</div>
-
+      <div class="card">
+        <div class="number">SERVICE 01</div>
         <h3>Document Typing</h3>
-
         <p>
-          We convert handwritten, scanned and image-based
-          documents into clean digital files.
+          Convert handwritten, scanned or image documents
+          into clean editable digital documents.
         </p>
-
-        <ul>
-          <li>Handwritten documents</li>
-          <li>Scanned documents</li>
-          <li>Image-to-text typing</li>
-          <li>Word document preparation</li>
-        </ul>
-
       </div>
 
-
-      <div class="service-card">
-
-        <div class="service-icon">📊</div>
-
+      <div class="card">
+        <div class="number">SERVICE 02</div>
         <h3>Data Entry</h3>
-
         <p>
-          Accurate data entry and organization for
-          businesses, individuals and organizations.
+          Accurate data entry for spreadsheets, forms,
+          records and other digital systems.
         </p>
-
-        <ul>
-          <li>Excel data entry</li>
-          <li>Lists and records</li>
-          <li>Database updates</li>
-          <li>Data organization</li>
-        </ul>
-
       </div>
 
-
-      <div class="service-card">
-
-        <div class="service-icon">📄</div>
-
-        <h3>CV &amp; Resume Formatting</h3>
-
+      <div class="card">
+        <div class="number">SERVICE 03</div>
+        <h3>CV & Resume Formatting</h3>
         <p>
-          Give your CV a clean, professional and organized
-          presentation.
+          Give your CV or resume a professional, organized
+          and polished layout.
         </p>
-
-        <ul>
-          <li>CV formatting</li>
-          <li>Resume formatting</li>
-          <li>Layout improvement</li>
-          <li>Professional presentation</li>
-        </ul>
-
       </div>
 
-
-      <div class="service-card">
-
-        <div class="service-icon">📝</div>
-
-        <h3>Reports &amp; Assignments</h3>
-
+      <div class="card">
+        <div class="number">SERVICE 04</div>
+        <h3>Reports & Assignments</h3>
         <p>
-          Typing and formatting support for academic and
-          professional documents.
+          Typing and formatting support for assignments,
+          reports, projects and other documents.
         </p>
-
-        <ul>
-          <li>Assignments</li>
-          <li>Reports</li>
-          <li>Projects</li>
-          <li>Research documents</li>
-        </ul>
-
       </div>
 
-
-      <div class="service-card">
-
-        <div class="service-icon">🎧</div>
-
+      <div class="card">
+        <div class="number">SERVICE 05</div>
         <h3>Basic Transcription</h3>
-
         <p>
-          Convert clear audio recordings into organized
-          written documents.
+          Convert clear audio recordings into readable
+          and organized text.
         </p>
-
-        <ul>
-          <li>Interviews</li>
-          <li>Meetings</li>
-          <li>Voice recordings</li>
-          <li>Basic audio transcription</li>
-        </ul>
-
       </div>
 
-
-      <div class="service-card">
-
-        <div class="service-icon">📑</div>
-
+      <div class="card">
+        <div class="number">SERVICE 06</div>
         <h3>Document Formatting</h3>
-
         <p>
-          Improve the structure, appearance and readability
-          of your documents.
+          Improve document structure, spacing, layout,
+          headings and overall presentation.
         </p>
-
-        <ul>
-          <li>Word formatting</li>
-          <li>Page layout</li>
-          <li>Headings and spacing</li>
-          <li>Professional presentation</li>
-        </ul>
-
       </div>
 
     </div>
@@ -575,51 +400,38 @@
 
   <div class="container">
 
-    <div class="section-heading">
-
-      <h2>Who We Help</h2>
-
-      <p>
-        Our services can be adapted to different types of clients.
-      </p>
-
+    <div class="section-title">
+      <h2>Who We Serve</h2>
+      <p>SwiftType services can support a wide range of clients.</p>
     </div>
-
 
     <div class="audience-grid">
 
       <div class="audience-card">
-        <div>🎓</div>
         <h3>Students</h3>
         <p>
-          Assignments, reports, projects and other documents.
+          Assignments, projects, reports and academic documents.
         </p>
       </div>
 
-
       <div class="audience-card">
-        <div>💼</div>
         <h3>Professionals</h3>
         <p>
-          CVs, reports, letters and professional documents.
+          CVs, reports, documents and administrative tasks.
         </p>
       </div>
 
-
       <div class="audience-card">
-        <div>🏢</div>
         <h3>Businesses</h3>
         <p>
-          Data entry and document support for operations.
+          Data entry, records and document support.
         </p>
       </div>
 
-
       <div class="audience-card">
-        <div>🏫</div>
         <h3>Organizations</h3>
         <p>
-          Schools, churches and other organizations.
+          Administrative typing and digital documentation support.
         </p>
       </div>
 
@@ -637,21 +449,17 @@
     <h2>Need a Service?</h2>
 
     <p>
-      Tell us what you need and we'll provide a quote based
-      on your project.
+      Tell us what you need and we'll provide a quote.
     </p>
 
-    <a
-      href="index.html#quote"
-      class="btn btn-primary"
-    >
+    <a href="quote.html" class="btn">
       Request a Quote
     </a>
 
     <a
       href="https://wa.me/233592416096"
       target="_blank"
-      class="btn btn-secondary"
+      class="btn btn-outline"
     >
       WhatsApp Us
     </a>
@@ -663,84 +471,39 @@
 
 <footer>
 
-  <div class="container">
+  <h3>SwiftType</h3>
 
-    <div class="footer-grid">
+  <p>
+    Fast, accurate and reliable typing & digital support services.
+  </p>
 
-      <div>
+  <p style="margin-top:8px;">
+    <a href="mailto:gabrielquansah4@gmail.com">
+      gabrielquansah4@gmail.com
+    </a>
+  </p>
 
-        <h3>SwiftType</h3>
+  <p>
+    <a href="https://wa.me/233592416096" target="_blank">
+      WhatsApp: +233 59 241 6096
+    </a>
+  </p>
 
-        <p>
-          Fast, accurate and professional typing,
-          data entry and document support services.
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <h3>Quick Links</h3>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-
-          <li>
-            <a href="about.html">About</a>
-          </li>
-
-          <li>
-            <a href="services.html">Services</a>
-          </li>
-
-          <li>
-            <a href="pricing.html">Pricing</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <div>
-
-        <h3>Contact</h3>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="mailto:gabrielquansah4@gmail.com">
-              Email
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://wa.me/233592416096"
-              target="_blank"
-            >
-              WhatsApp
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-
-    <div class="copyright">
-      © 2026 SwiftType. All rights reserved.
-    </div>
-
-  </div>
+  <p style="margin-top:20px;font-size:.85rem;">
+    © 2026 SwiftType. All rights reserved.
+  </p>
 
 </footer>
+
+
+<a
+  href="https://wa.me/233592416096"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Chat with SwiftType on WhatsApp"
+>
+  Chat on WhatsApp
+</a>
 
 </body>
 </html>
