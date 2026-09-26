@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pricing | SwiftType</title>
+  <title>FAQ | SwiftType</title>
 
-  <meta name="description"
-        content="View SwiftType starting prices for typing, handwritten document typing and CV formatting services.">
+  <meta
+    name="description"
+    content="Frequently asked questions about SwiftType typing, data entry, pricing, turnaround and document services."
+  >
 
   <style>
     * {
@@ -18,9 +20,9 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
       line-height: 1.6;
-      color: #1f2937;
-      background: #ffffff;
     }
 
     a {
@@ -30,13 +32,13 @@
 
     .container {
       width: 92%;
-      max-width: 1150px;
+      max-width: 1100px;
       margin: auto;
     }
 
     header {
-      background: white;
-      border-bottom: 1px solid #e5e7eb;
+      background: #0f172a;
+      color: white;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -51,234 +53,165 @@
     }
 
     .logo {
-      font-size: 28px;
+      font-size: 1.7rem;
       font-weight: 800;
-      color: #0f766e;
+      color: #38bdf8;
     }
 
     .logo span {
-      color: #111827;
+      color: white;
     }
 
-    .nav-links {
+    nav {
       display: flex;
+      gap: 20px;
       align-items: center;
-      gap: 25px;
-      list-style: none;
+      flex-wrap: wrap;
     }
 
-    .nav-links a {
-      font-size: 15px;
-      font-weight: 600;
-      color: #374151;
+    nav a {
+      color: #e2e8f0;
+      font-size: .94rem;
     }
 
-    .nav-links a:hover {
-      color: #0f766e;
+    nav a:hover {
+      color: #38bdf8;
     }
 
-    .nav-button {
-      background: #0f766e;
-      color: white !important;
-      padding: 11px 18px;
-      border-radius: 8px;
+    .nav-quote {
+      background: #38bdf8;
+      color: #082f49 !important;
+      padding: 10px 16px;
+      border-radius: 7px;
+      font-weight: bold;
     }
 
     .hero {
-      background: linear-gradient(135deg, #ecfdf5, #f8fafc);
-      padding: 85px 0;
+      background: linear-gradient(135deg,#020617,#164e63);
+      color: white;
       text-align: center;
+      padding: 90px 20px;
     }
 
     .hero h1 {
-      font-size: clamp(40px, 6vw, 58px);
-      margin-bottom: 18px;
-    }
-
-    .hero h1 span {
-      color: #0f766e;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-      color: #4b5563;
-    }
-
-    .pricing {
-      padding: 80px 0;
-    }
-
-    .heading {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 50px;
-    }
-
-    .heading h2 {
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
-
-    .heading p {
-      color: #6b7280;
-    }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .price-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 35px;
-      text-align: center;
-      background: white;
-    }
-
-    .price-card.featured {
-      border: 2px solid #0f766e;
-      transform: translateY(-5px);
-    }
-
-    .price-card h3 {
-      font-size: 22px;
+      font-size: clamp(2.4rem,6vw,4rem);
       margin-bottom: 15px;
     }
 
-    .price {
-      font-size: 40px;
-      font-weight: 800;
-      color: #0f766e;
-      margin-bottom: 5px;
+    .hero p {
+      color: #cbd5e1;
+      max-width: 700px;
+      margin: auto;
     }
 
-    .unit {
-      color: #6b7280;
-      margin-bottom: 20px;
+    section {
+      padding: 75px 20px;
     }
 
-    .price-card ul {
-      list-style: none;
-      text-align: left;
-      margin: 25px 0;
+    .faq-container {
+      max-width: 850px;
+      margin: auto;
     }
 
-    .price-card li {
+    details {
+      background: white;
+      margin-bottom: 14px;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px 22px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #0f172a;
+    }
+
+    details p {
+      margin-top: 15px;
+      color: #64748b;
+    }
+
+    .cta {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
       margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: #cbd5e1;
+      margin-bottom: 25px;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 21px;
-      border-radius: 9px;
-      font-weight: 700;
-      margin: 5px;
-    }
-
-    .btn-primary {
-      background: #0f766e;
-      color: white;
-    }
-
-    .btn-secondary {
-      border: 2px solid #0f766e;
-      color: #0f766e;
-    }
-
-    .note {
-      background: #f8fafc;
-      padding: 70px 0;
-      text-align: center;
-    }
-
-    .note-box {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .note h2 {
-      margin-bottom: 15px;
-    }
-
-    .note p {
-      color: #6b7280;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+      background: #38bdf8;
+      color: #082f49;
     }
 
     footer {
-      background: #111827;
-      color: #d1d5db;
-      padding: 45px 0 25px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 35px;
+      background: #020617;
+      color: #cbd5e1;
+      padding: 35px 20px;
+      text-align: center;
     }
 
     footer h3 {
-      color: white;
-      margin-bottom: 12px;
-    }
-
-    footer p {
-      color: #9ca3af;
-    }
-
-    .footer-links {
-      list-style: none;
-    }
-
-    .footer-links li {
+      color: #38bdf8;
       margin-bottom: 8px;
     }
 
-    .footer-links a:hover {
+    footer a:hover {
+      color: #38bdf8;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
       color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      z-index: 9999;
+      box-shadow: 0 5px 18px rgba(0,0,0,.25);
     }
 
-    .copyright {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid #374151;
-      color: #9ca3af;
-      font-size: 14px;
-    }
-
-    @media (max-width: 850px) {
+    @media(max-width:850px) {
       .nav {
         flex-direction: column;
         padding: 15px 0;
       }
 
-      .nav-links {
-        flex-wrap: wrap;
+      nav {
         justify-content: center;
-        gap: 14px;
-      }
-
-      .pricing-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        gap: 12px;
       }
     }
 
-    @media (max-width: 600px) {
-      .pricing-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
+    @media(max-width:600px) {
+      .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 0;
       }
 
-      .price-card.featured {
-        transform: none;
+      .whatsapp-float::after {
+        content: "☏";
+        font-size: 24px;
       }
     }
   </style>
@@ -293,187 +226,173 @@
       Swift<span>Type</span>
     </a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li>
-        <a href="quote.html" class="nav-button">
-          Get a Quote
-        </a>
-      </li>
-    </ul>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="nav-quote">Get a Quote</a>
+    </nav>
 
   </div>
 </header>
 
+
 <section class="hero">
-  <div class="container">
-    <h1>Simple <span>Pricing</span></h1>
-    <p>
-      Our prices start from the rates below. Final pricing depends
-      on document complexity, volume and turnaround time.
-    </p>
-  </div>
+
+  <h1>Frequently Asked Questions</h1>
+
+  <p>
+    Find quick answers about SwiftType services, pricing and requests.
+  </p>
+
 </section>
 
-<section class="pricing">
 
-  <div class="container">
+<section>
 
-    <div class="heading">
-      <h2>Starting Prices</h2>
+  <div class="faq-container">
+
+    <details>
+      <summary>What services does SwiftType provide?</summary>
       <p>
-        Contact us for a specific quote for your project.
+        SwiftType provides document typing, data entry, CV formatting,
+        reports and assignments, basic transcription and document formatting.
       </p>
-    </div>
+    </details>
 
-    <div class="pricing-grid">
+    <details>
+      <summary>How do I request a quote?</summary>
+      <p>
+        You can use the Request a Quote page on the website or contact
+        SwiftType directly through WhatsApp.
+      </p>
+    </details>
 
-      <div class="price-card">
+    <details>
+      <summary>How do I send my document?</summary>
+      <p>
+        After submitting your request, you can send your document
+        through WhatsApp or email so we can review the work required.
+      </p>
+    </details>
 
-        <h3>Standard Typing</h3>
+    <details>
+      <summary>How long does the work take?</summary>
+      <p>
+        Turnaround depends on the size, complexity and deadline of the
+        task. We confirm the expected turnaround after reviewing your request.
+      </p>
+    </details>
 
-        <div class="price">GH₵5+</div>
+    <details>
+      <summary>Do you work with businesses and organizations?</summary>
+      <p>
+        Yes. SwiftType can provide typing, data entry and document
+        support for businesses, schools, organizations and individuals.
+      </p>
+    </details>
 
-        <div class="unit">per page</div>
+    <details>
+      <summary>Do you accept urgent requests?</summary>
+      <p>
+        Urgent requests may be possible depending on workload and the
+        required deadline. Contact us as early as possible.
+      </p>
+    </details>
 
-        <ul>
-          <li>✓ Digital document typing</li>
-          <li>✓ Clean formatting</li>
-          <li>✓ Basic proofreading check</li>
-          <li>✓ Digital delivery</li>
-        </ul>
+    <details>
+      <summary>How much does typing cost?</summary>
+      <p>
+        Standard typing starts from GH₵5 per page, while handwritten
+        typing starts from GH₵8 per page. Final pricing depends on the task.
+      </p>
+    </details>
 
-        <a href="quote.html" class="btn btn-primary">
-          Request Quote
-        </a>
+    <details>
+      <summary>How much does CV formatting cost?</summary>
+      <p>
+        CV formatting starts from GH₵30 per CV.
+      </p>
+    </details>
 
-      </div>
+    <details>
+      <summary>How do I pay?</summary>
+      <p>
+        Payment arrangements are discussed and confirmed when your
+        request and quotation are agreed.
+      </p>
+    </details>
 
-
-      <div class="price-card featured">
-
-        <h3>Handwritten Typing</h3>
-
-        <div class="price">GH₵8+</div>
-
-        <div class="unit">per page</div>
-
-        <ul>
-          <li>✓ Handwritten documents</li>
-          <li>✓ Clear digital formatting</li>
-          <li>✓ Organized presentation</li>
-          <li>✓ Digital delivery</li>
-        </ul>
-
-        <a href="quote.html" class="btn btn-primary">
-          Request Quote
-        </a>
-
-      </div>
-
-
-      <div class="price-card">
-
-        <h3>CV Formatting</h3>
-
-        <div class="price">GH₵30+</div>
-
-        <div class="unit">per CV</div>
-
-        <ul>
-          <li>✓ Professional layout</li>
-          <li>✓ Clean formatting</li>
-          <li>✓ Better presentation</li>
-          <li>✓ Digital delivery</li>
-        </ul>
-
-        <a href="quote.html" class="btn btn-primary">
-          Request Quote
-        </a>
-
-      </div>
-
-    </div>
+    <details>
+      <summary>Will my documents be treated confidentially?</summary>
+      <p>
+        SwiftType aims to handle client documents responsibly and
+        maintain appropriate confidentiality when working on client materials.
+      </p>
+    </details>
 
   </div>
 
 </section>
 
-<section class="note">
 
-  <div class="container note-box">
+<section class="cta">
 
-    <h2>Need Something Different?</h2>
+  <div class="container">
+
+    <h2>Still Have a Question?</h2>
 
     <p>
-      We also provide data entry, document formatting,
-      reports, assignments and basic transcription.
-      Contact us for a customized quote.
+      Contact SwiftType directly or send us your request.
     </p>
 
-    <br>
-
-    <a href="quote.html" class="btn btn-primary">
-      Get a Custom Quote
+    <a href="quote.html" class="btn">
+      Request a Quote
     </a>
 
   </div>
 
 </section>
 
+
 <footer>
 
-  <div class="container">
+  <h3>SwiftType</h3>
 
-    <div class="footer-grid">
+  <p>
+    Fast, accurate and reliable typing & digital support services.
+  </p>
 
-      <div>
-        <h3>SwiftType</h3>
-        <p>
-          Fast, accurate and professional typing,
-          data entry and document support services.
-        </p>
-      </div>
+  <p style="margin-top:8px;">
+    <a href="mailto:gabrielquansah4@gmail.com">
+      gabrielquansah4@gmail.com
+    </a>
+  </p>
 
-      <div>
-        <h3>Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-        </ul>
-      </div>
+  <p>
+    <a href="https://wa.me/233592416096" target="_blank">
+      WhatsApp: +233 59 241 6096
+    </a>
+  </p>
 
-      <div>
-        <h3>Contact</h3>
-        <ul class="footer-links">
-          <li>
-            <a href="mailto:gabrielquansah4@gmail.com">
-              Email
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/233592416096" target="_blank">
-              WhatsApp
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="copyright">
-      © 2026 SwiftType. All rights reserved.
-    </div>
-
-  </div>
+  <p style="margin-top:20px;font-size:.85rem;">
+    © 2026 SwiftType. All rights reserved.
+  </p>
 
 </footer>
+
+
+<a
+  href="https://wa.me/233592416096"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Chat with SwiftType on WhatsApp"
+>
+  Chat on WhatsApp
+</a>
 
 </body>
 </html>
