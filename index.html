@@ -7,66 +7,39 @@
 
   <title>SwiftType | Professional Typing, Data Entry & Document Services</title>
 
-  <meta
-    name="description"
-    content="SwiftType provides professional document typing, data entry, CV formatting, transcription, reports, assignments and document formatting services."
-  >
+  <meta name="description" content="SwiftType provides fast, accurate and professional typing, data entry, CV formatting, transcription, reports, assignments and document formatting services.">
 
-  <meta
-    name="keywords"
-    content="SwiftType, typing services, document typing, data entry, CV formatting, transcription, document formatting, report typing, assignment typing, Ghana typing services"
-  >
+  <meta name="keywords" content="typing services, data entry, document typing, CV formatting, resume formatting, transcription, document formatting, assignment typing, report typing, SwiftType Ghana">
 
   <meta name="author" content="SwiftType">
-
-  <!-- Google Search Console Verification -->
-  <meta
-    name="google-site-verification"
-    content="p7idW9hdQs8dyYFpfaI-r1nwYM86EWJbIaVZGr40CzM"
-  />
 
   <meta name="robots" content="index, follow">
 
   <meta name="theme-color" content="#0b1220">
 
+  <!-- SwiftType Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
   <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="SwiftType | Professional Typing & Data Services"
-  >
-
-  <meta
-    property="og:description"
-    content="Fast, accurate and professional typing, data entry, CV formatting, transcription and document services."
-  >
-
-  <meta
-    property="og:url"
-    content="https://gabrielquansah4-bit.github.io/swifttype/"
-  >
-
+  <meta property="og:title" content="SwiftType | Professional Typing & Data Services">
+  <meta property="og:description" content="Fast, accurate and professional typing, data entry, CV formatting, transcription and document services.">
+  <meta property="og:url" content="https://gabrielquansah4-bit.github.io/swifttype/">
   <meta property="og:type" content="website">
-
   <meta property="og:site_name" content="SwiftType">
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SwiftType | Professional Typing & Data Services">
+  <meta name="twitter:description" content="Fast, accurate and professional typing, data entry and document services.">
 
-  <meta
-    name="twitter:title"
-    content="SwiftType | Professional Typing & Data Services"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Professional typing, data entry, CV formatting, transcription and document services."
-  >
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="p7idW9hdQs8dyYFpfaI-r1nwYM86EWJbIaVZGr40CzM">
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -75,14 +48,13 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
-      color: #172033;
       line-height: 1.6;
+      color: #1f2937;
+      background: #ffffff;
     }
 
     a {
       text-decoration: none;
-      color: inherit;
     }
 
     .container {
@@ -91,28 +63,27 @@
       margin: auto;
     }
 
-    /* NAVIGATION */
-
+    /* HEADER */
     header {
       background: #0b1220;
-      color: white;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     }
 
-    .nav {
+    .nav-container {
       min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 25px;
+      gap: 20px;
     }
 
     .logo {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 800;
+      color: #ffffff;
       letter-spacing: -1px;
     }
 
@@ -124,60 +95,59 @@
       display: flex;
       align-items: center;
       gap: 22px;
-      flex-wrap: wrap;
     }
 
     nav a {
-      color: #e5e7eb;
-      font-size: 14px;
+      color: #ffffff;
+      font-size: 15px;
       font-weight: 600;
-      transition: 0.2s;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: #38bdf8;
     }
 
-    .nav-cta {
+    .quote-btn {
       background: #38bdf8;
-      color: #07111f !important;
-      padding: 10px 17px;
-      border-radius: 8px;
+      color: #0b1220 !important;
+      padding: 10px 16px;
+      border-radius: 7px;
+      font-weight: 700;
     }
 
-    .nav-cta:hover {
+    .quote-btn:hover {
       background: #7dd3fc;
     }
 
     /* HERO */
-
     .hero {
-      background: linear-gradient(135deg, #0b1220, #14213d);
-      color: white;
-      padding: 95px 0 90px;
+      background: linear-gradient(135deg, #0b1220, #16243a);
+      color: #ffffff;
+      padding: 100px 0;
     }
 
     .hero-content {
-      max-width: 780px;
+      max-width: 760px;
     }
 
-    .hero-badge {
+    .badge {
       display: inline-block;
       background: rgba(56,189,248,0.12);
       border: 1px solid rgba(56,189,248,0.35);
       color: #7dd3fc;
-      padding: 7px 14px;
-      border-radius: 50px;
-      font-size: 13px;
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 14px;
       font-weight: 700;
       margin-bottom: 20px;
     }
 
-    h1 {
-      font-size: clamp(38px, 6vw, 66px);
-      line-height: 1.08;
-      letter-spacing: -2px;
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 68px);
+      line-height: 1.05;
       margin-bottom: 22px;
+      letter-spacing: -2px;
     }
 
     .hero h1 span {
@@ -185,9 +155,9 @@
     }
 
     .hero p {
-      color: #cbd5e1;
-      font-size: 18px;
-      max-width: 690px;
+      font-size: 19px;
+      color: #dbeafe;
+      max-width: 680px;
       margin-bottom: 30px;
     }
 
@@ -199,15 +169,15 @@
 
     .btn {
       display: inline-block;
-      padding: 14px 22px;
-      border-radius: 9px;
+      padding: 13px 22px;
+      border-radius: 7px;
       font-weight: 700;
-      transition: 0.2s;
+      transition: 0.3s;
     }
 
     .btn-primary {
       background: #38bdf8;
-      color: #07111f;
+      color: #0b1220;
     }
 
     .btn-primary:hover {
@@ -215,194 +185,204 @@
       transform: translateY(-2px);
     }
 
-    .btn-secondary {
-      border: 1px solid #64748b;
-      color: white;
+    .btn-outline {
+      border: 1px solid #38bdf8;
+      color: #ffffff;
     }
 
-    .btn-secondary:hover {
-      background: rgba(255,255,255,0.08);
+    .btn-outline:hover {
+      background: #38bdf8;
+      color: #0b1220;
     }
 
     /* SECTIONS */
-
     section {
-      padding: 75px 0;
+      padding: 80px 0;
     }
 
     .section-heading {
       text-align: center;
-      max-width: 700px;
-      margin: 0 auto 45px;
+      margin-bottom: 45px;
     }
 
     .section-heading h2 {
       font-size: 36px;
+      color: #0b1220;
       margin-bottom: 12px;
-      color: #0f172a;
     }
 
     .section-heading p {
       color: #64748b;
+      max-width: 650px;
+      margin: auto;
     }
 
     /* SERVICES */
+    .services {
+      background: #f8fafc;
+    }
 
-    .services-grid {
+    .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
     .service-card {
-      background: white;
+      background: #ffffff;
       padding: 30px;
-      border-radius: 14px;
+      border-radius: 12px;
       border: 1px solid #e2e8f0;
-      box-shadow: 0 8px 25px rgba(15,23,42,0.05);
-      transition: 0.25s;
+      transition: 0.3s;
     }
 
     .service-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(15,23,42,0.10);
+      box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+      border-color: #bae6fd;
     }
 
     .service-icon {
       width: 48px;
       height: 48px;
+      border-radius: 10px;
+      background: #e0f2fe;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #e0f2fe;
       color: #0284c7;
-      border-radius: 10px;
       font-size: 22px;
+      font-weight: bold;
       margin-bottom: 18px;
     }
 
     .service-card h3 {
-      margin-bottom: 9px;
-      font-size: 19px;
+      color: #0b1220;
+      margin-bottom: 10px;
+      font-size: 20px;
     }
 
     .service-card p {
       color: #64748b;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     /* ABOUT */
-
-    .about {
-      background: white;
-    }
-
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 45px;
+      gap: 55px;
       align-items: center;
     }
 
-    .about h2 {
+    .about-text h2 {
       font-size: 36px;
+      color: #0b1220;
       margin-bottom: 18px;
     }
 
-    .about p {
+    .about-text p {
       color: #64748b;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
     }
 
-    .features {
-      display: grid;
-      gap: 14px;
+    .about-list {
+      list-style: none;
+      margin-top: 22px;
     }
 
-    .feature {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
+    .about-list li {
+      margin-bottom: 12px;
+      color: #334155;
+      font-weight: 600;
     }
 
-    .check {
-      background: #dcfce7;
-      color: #15803d;
-      min-width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .about-list li::before {
+      content: "✓";
+      color: #0284c7;
+      margin-right: 10px;
       font-weight: bold;
     }
 
-    /* CTA */
+    .about-box {
+      background: #0b1220;
+      color: #ffffff;
+      padding: 40px;
+      border-radius: 14px;
+    }
 
+    .about-box h3 {
+      color: #38bdf8;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .about-box p {
+      color: #dbeafe;
+    }
+
+    /* CTA */
     .cta {
-      background: #0f172a;
-      color: white;
+      background: #e0f2fe;
       text-align: center;
     }
 
     .cta h2 {
-      font-size: 36px;
-      margin-bottom: 12px;
+      font-size: 38px;
+      color: #0b1220;
+      margin-bottom: 15px;
     }
 
     .cta p {
-      color: #cbd5e1;
+      color: #475569;
       max-width: 650px;
       margin: 0 auto 25px;
     }
 
     /* FOOTER */
-
     footer {
-      background: #070d18;
-      color: #94a3b8;
-      padding: 35px 0;
+      background: #0b1220;
+      color: #ffffff;
+      padding: 45px 0 25px;
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
       gap: 35px;
+      margin-bottom: 30px;
     }
 
-    .footer-brand {
-      color: white;
-      font-size: 23px;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-
-    footer h3 {
-      color: white;
-      margin-bottom: 12px;
-      font-size: 16px;
+    footer h3,
+    footer h4 {
+      margin-bottom: 15px;
     }
 
     footer p,
     footer a {
+      color: #cbd5e1;
       font-size: 14px;
-      color: #94a3b8;
     }
 
     footer a:hover {
       color: #38bdf8;
     }
 
-    .footer-bottom {
-      border-top: 1px solid #1e293b;
-      margin-top: 30px;
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .copyright {
+      border-top: 1px solid #243047;
       padding-top: 20px;
       text-align: center;
+      color: #94a3b8;
       font-size: 13px;
     }
 
     /* WHATSAPP */
-
     .whatsapp {
       position: fixed;
       right: 22px;
@@ -411,7 +391,7 @@
       height: 56px;
       border-radius: 50%;
       background: #25d366;
-      color: white;
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -422,14 +402,21 @@
     }
 
     .whatsapp:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
     }
 
-    /* RESPONSIVE */
-
+    /* MOBILE */
     @media (max-width: 850px) {
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
       .about-grid {
@@ -442,21 +429,29 @@
     }
 
     @media (max-width: 650px) {
-      .nav {
+      .nav-container {
         flex-direction: column;
-        padding: 16px 0;
+        padding: 15px 0;
       }
 
       nav {
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
       }
 
       .hero {
         padding: 70px 0;
       }
 
-      .services-grid {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .service-grid {
         grid-template-columns: 1fr;
       }
 
@@ -464,12 +459,8 @@
         grid-template-columns: 1fr;
       }
 
-      h1 {
-        font-size: 42px;
-      }
-
       .section-heading h2,
-      .about h2,
+      .about-text h2,
       .cta h2 {
         font-size: 30px;
       }
@@ -479,63 +470,55 @@
 
 <body>
 
-<header>
-  <div class="container nav">
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
 
-    <a href="index.html" class="logo">
-      Swift<span>Type</span>
-    </a>
+      <a href="index.html" class="logo">
+        Swift<span>Type</span>
+      </a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="quote.html" class="nav-cta">Get a Quote</a>
-    </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="quote.html" class="quote-btn">Get a Quote</a>
+      </nav>
 
-  </div>
-</header>
+    </div>
+  </header>
 
-<main>
-
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
 
       <div class="hero-content">
 
-        <div class="hero-badge">
+        <div class="badge">
           Fast • Accurate • Professional
         </div>
 
         <h1>
-          Professional <span>Typing & Data</span> Services
+          Professional <span>Typing</span> & Data Services
         </h1>
 
         <p>
-          SwiftType helps students, professionals, businesses and
-          organizations turn documents, handwritten materials and
-          information into clean, accurate and professionally formatted
-          digital files.
+          SwiftType provides reliable typing, data entry, document formatting,
+          CV formatting, transcription, reports and assignment services for
+          individuals, students, professionals and organizations.
         </p>
 
         <div class="hero-buttons">
-
           <a href="quote.html" class="btn btn-primary">
             Request a Quote
           </a>
 
-          <a
-            href="https://wa.me/233592416096"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-secondary"
-          >
-            Chat on WhatsApp
+          <a href="https://wa.me/233592416096" class="btn btn-outline">
+            WhatsApp Us
           </a>
-
         </div>
 
       </div>
@@ -543,34 +526,35 @@
     </div>
   </section>
 
-  <section>
+  <!-- SERVICES -->
+  <section class="services">
     <div class="container">
 
       <div class="section-heading">
-        <h2>What We Do</h2>
+        <h2>Our Services</h2>
         <p>
-          Reliable digital document and administrative support
-          for individuals and organizations.
+          Professional digital services designed to save you time and keep
+          your documents accurate, organized and presentable.
         </p>
       </div>
 
-      <div class="services-grid">
+      <div class="service-grid">
 
         <div class="service-card">
-          <div class="service-icon">⌨</div>
+          <div class="service-icon">T</div>
           <h3>Document Typing</h3>
           <p>
-            Convert handwritten notes, scanned documents and
-            other materials into clean digital documents.
+            Fast and accurate typing of handwritten notes, scanned documents,
+            PDFs and other source materials.
           </p>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">▦</div>
+          <div class="service-icon">D</div>
           <h3>Data Entry</h3>
           <p>
-            Accurate data entry and organization for spreadsheets,
-            lists, records and business information.
+            Accurate data entry, spreadsheet updates, record organization and
+            digital data processing.
           </p>
         </div>
 
@@ -578,35 +562,35 @@
           <div class="service-icon">CV</div>
           <h3>CV & Resume Formatting</h3>
           <p>
-            Professional formatting that gives your CV or resume
-            a clean and organized appearance.
+            Clean, professional and well-structured CV and resume formatting
+            for job applications and professional use.
           </p>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">▤</div>
+          <div class="service-icon">R</div>
           <h3>Reports & Assignments</h3>
           <p>
-            Typing and formatting assistance for reports,
-            assignments, research documents and academic work.
+            Professional typing and formatting of academic assignments,
+            reports, projects and other documents.
           </p>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">♫</div>
+          <div class="service-icon">A</div>
           <h3>Basic Transcription</h3>
           <p>
-            Convert clear audio recordings into organized
+            Conversion of clear audio recordings into organized and readable
             written documents.
           </p>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">✎</div>
+          <div class="service-icon">F</div>
           <h3>Document Formatting</h3>
           <p>
-            Improve document structure, spacing, headings,
-            tables and overall presentation.
+            Professional formatting of Word documents, reports, tables,
+            headings, references and other digital documents.
           </p>
         </div>
 
@@ -615,64 +599,51 @@
     </div>
   </section>
 
-  <section class="about">
+  <!-- ABOUT -->
+  <section>
     <div class="container">
 
       <div class="about-grid">
 
-        <div>
-          <h2>Simple, Reliable Document Support</h2>
+        <div class="about-text">
+
+          <h2>Why Choose SwiftType?</h2>
 
           <p>
-            SwiftType provides practical typing, data entry and
-            document services designed to save clients time and
-            reduce the stress of handling repetitive digital work.
+            SwiftType is built around three things: accuracy, professionalism
+            and dependable service.
           </p>
 
           <p>
-            Whether you are an individual, student, professional,
-            small business or organization, we can help transform
-            your information into usable digital documents.
+            Whether you need a single document typed or ongoing administrative
+            and data-entry support, our goal is to deliver clear and
+            professionally prepared work.
           </p>
 
-          <a href="about.html" class="btn btn-primary">
-            Learn More About SwiftType
-          </a>
+          <ul class="about-list">
+            <li>Accurate document preparation</li>
+            <li>Professional formatting</li>
+            <li>Fast turnaround</li>
+            <li>Clear communication</li>
+            <li>Confidential handling of documents</li>
+          </ul>
+
         </div>
 
-        <div class="features">
+        <div class="about-box">
 
-          <div class="feature">
-            <div class="check">✓</div>
-            <div>
-              <strong>Accuracy-focused</strong>
-              <p>Careful attention to details and document structure.</p>
-            </div>
-          </div>
+          <h3>Need something typed?</h3>
 
-          <div class="feature">
-            <div class="check">✓</div>
-            <div>
-              <strong>Professional formatting</strong>
-              <p>Clean and organized documents ready for use.</p>
-            </div>
-          </div>
+          <p>
+            Send us the details of your project and we will review the work
+            and provide a quotation based on your requirements.
+          </p>
 
-          <div class="feature">
-            <div class="check">✓</div>
-            <div>
-              <strong>Flexible services</strong>
-              <p>Services available for individuals and organizations.</p>
-            </div>
-          </div>
+          <br>
 
-          <div class="feature">
-            <div class="check">✓</div>
-            <div>
-              <strong>Direct communication</strong>
-              <p>Contact SwiftType directly through WhatsApp or email.</p>
-            </div>
-          </div>
+          <a href="quote.html" class="btn btn-primary">
+            Request a Quote
+          </a>
 
         </div>
 
@@ -681,94 +652,89 @@
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta">
 
     <div class="container">
 
-      <h2>Need a Document Typed or Formatted?</h2>
+      <h2>Ready to Get Started?</h2>
 
       <p>
-        Tell us what you need and receive a quote based on
-        your document, workload and deadline.
+        Tell us what you need and let SwiftType handle the typing,
+        formatting or data-entry work.
       </p>
 
       <a href="quote.html" class="btn btn-primary">
-        Request a Quote
+        Get Your Quote
       </a>
 
     </div>
 
   </section>
 
-</main>
+  <!-- FOOTER -->
+  <footer>
 
-<footer>
+    <div class="container">
 
-  <div class="container">
+      <div class="footer-grid">
 
-    <div class="footer-grid">
+        <div>
+          <h3>Swift<span style="color:#38bdf8;">Type</span></h3>
 
-      <div>
-        <div class="footer-brand">SwiftType</div>
+          <p>
+            Professional typing, data entry and document services.
+          </p>
+        </div>
 
-        <p>
-          Professional typing, data entry and document
-          support services.
-        </p>
+        <div>
+          <h4>Quick Links</h4>
+
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+
+          <div class="footer-links">
+            <a href="mailto:gabrielquansah4@gmail.com">
+              gabrielquansah4@gmail.com
+            </a>
+
+            <a href="https://wa.me/233592416096">
+              WhatsApp: +233 59 241 6096
+            </a>
+
+            <a href="contact.html">
+              Contact SwiftType
+            </a>
+          </div>
+        </div>
+
       </div>
 
-      <div>
-
-        <h3>Quick Links</h3>
-
-        <p><a href="about.html">About</a></p>
-        <p><a href="services.html">Services</a></p>
-        <p><a href="pricing.html">Pricing</a></p>
-        <p><a href="faq.html">FAQ</a></p>
-
-      </div>
-
-      <div>
-
-        <h3>Contact</h3>
-
-        <p>
-          <a href="mailto:gabrielquansah4@gmail.com">
-            gabrielquansah4@gmail.com
-          </a>
-        </p>
-
-        <p>
-          <a
-            href="https://wa.me/233592416096"
-            target="_blank"
-            rel="noopener"
-          >
-            +233 59 241 6096
-          </a>
-        </p>
-
+      <div class="copyright">
+        © 2026 SwiftType. All rights reserved.
       </div>
 
     </div>
 
-    <div class="footer-bottom">
-      © 2026 SwiftType. All rights reserved.
-    </div>
+  </footer>
 
-  </div>
-
-</footer>
-
-<a
-  class="whatsapp"
-  href="https://wa.me/233592416096"
-  target="_blank"
-  rel="noopener"
-  aria-label="Contact SwiftType on WhatsApp"
->
-  ☎
-</a>
+  <!-- FLOATING WHATSAPP -->
+  <a
+    href="https://wa.me/233592416096"
+    class="whatsapp"
+    aria-label="Chat with SwiftType on WhatsApp"
+    target="_blank"
+  >
+    W
+  </a>
 
 </body>
 </html>
