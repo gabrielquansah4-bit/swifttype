@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gabrielquansah4-bit.github.io/swifttype/sitemap.xml
