@@ -4,15 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SwiftType | Professional Typing & Data Services</title>
+  <title>SwiftType | Fast, Reliable Typing & Data Services</title>
 
-  <meta name="description"
-        content="SwiftType provides fast, accurate and affordable typing, data entry, CV formatting, document formatting and transcription services.">
-
-  <meta name="keywords"
-        content="typing services Ghana, data entry Ghana, CV formatting Ghana, document typing Accra, transcription Ghana">
-
-  <meta name="author" content="SwiftType">
+  <meta
+    name="description"
+    content="SwiftType provides fast, accurate and reliable typing, data entry, CV formatting, transcription and document formatting services."
+  >
 
   <style>
     * {
@@ -29,7 +26,7 @@
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
       color: #1f2937;
-      background: #ffffff;
+      background: #f8fafc;
     }
 
     a {
@@ -37,28 +34,23 @@
       color: inherit;
     }
 
-    img {
-      max-width: 100%;
-    }
-
     .container {
-      width: 92%;
-      max-width: 1150px;
+      width: 90%;
+      max-width: 1100px;
       margin: auto;
     }
 
-    /* HEADER */
-
     header {
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
+      background: #0f172a;
+      color: white;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     }
 
     .nav {
-      min-height: 72px;
+      min-height: 70px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -66,545 +58,279 @@
     }
 
     .logo {
-      font-size: 28px;
-      font-weight: 800;
-      color: #0f766e;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #38bdf8;
     }
 
-    .logo span {
-      color: #111827;
-    }
-
-    .nav-links {
+    nav {
       display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 25px;
-      list-style: none;
     }
 
-    .nav-links a {
-      font-size: 15px;
-      font-weight: 600;
-      color: #374151;
+    nav a {
+      color: white;
+      font-size: 0.95rem;
+      transition: 0.3s;
     }
 
-    .nav-links a:hover {
-      color: #0f766e;
+    nav a:hover {
+      color: #38bdf8;
     }
 
-    .nav-button {
-      background: #0f766e;
-      color: white !important;
-      padding: 11px 18px;
-      border-radius: 8px;
+    .nav-quote {
+      background: #38bdf8;
+      color: #0f172a !important;
+      padding: 9px 15px;
+      border-radius: 7px;
+      font-weight: bold;
     }
-
-    /* HERO */
 
     .hero {
-      background: linear-gradient(135deg, #ecfdf5, #f8fafc);
-      padding: 90px 0;
-    }
-
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      align-items: center;
-      gap: 60px;
+      background: linear-gradient(135deg, #0f172a, #164e63);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: clamp(40px, 6vw, 68px);
-      line-height: 1.05;
-      color: #111827;
-      margin-bottom: 25px;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      margin-bottom: 20px;
     }
 
     .hero h1 span {
-      color: #0f766e;
+      color: #38bdf8;
     }
 
     .hero p {
-      font-size: 19px;
-      color: #4b5563;
-      max-width: 650px;
-      margin-bottom: 30px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      color: #dbeafe;
     }
 
-    .hero-buttons {
+    .buttons {
       display: flex;
+      justify-content: center;
+      gap: 15px;
       flex-wrap: wrap;
-      gap: 14px;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 23px;
-      border-radius: 9px;
-      font-weight: 700;
-      border: 2px solid transparent;
-      transition: 0.2s;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
     .btn-primary {
-      background: #0f766e;
-      color: white;
+      background: #38bdf8;
+      color: #0f172a;
     }
 
     .btn-primary:hover {
-      background: #115e59;
+      background: #7dd3fc;
+      transform: translateY(-2px);
     }
 
     .btn-secondary {
-      border-color: #0f766e;
-      color: #0f766e;
-      background: white;
+      border: 2px solid #38bdf8;
+      color: white;
     }
 
-    .hero-card {
-      background: white;
-      padding: 35px;
-      border-radius: 18px;
-      box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+    .btn-secondary:hover {
+      background: #38bdf8;
+      color: #0f172a;
     }
-
-    .hero-card h3 {
-      font-size: 23px;
-      margin-bottom: 20px;
-    }
-
-    .hero-card-item {
-      display: flex;
-      gap: 14px;
-      margin-bottom: 18px;
-      align-items: flex-start;
-    }
-
-    .hero-card-item strong {
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    /* SECTIONS */
 
     section {
-      padding: 80px 0;
+      padding: 75px 20px;
     }
 
-    .section-heading {
+    .section-title {
       text-align: center;
-      max-width: 720px;
-      margin: 0 auto 50px;
+      margin-bottom: 45px;
     }
 
-    .section-heading h2 {
-      font-size: 38px;
-      color: #111827;
-      margin-bottom: 14px;
+    .section-title h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #0f172a;
     }
 
-    .section-heading p {
-      color: #6b7280;
-      font-size: 17px;
+    .section-title p {
+      color: #64748b;
     }
-
-    /* SERVICES */
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 22px;
     }
 
-    .service-card {
-      border: 1px solid #e5e7eb;
-      padding: 30px;
-      border-radius: 14px;
+    .card {
       background: white;
-      transition: 0.2s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.07);
-    }
-
-    .service-icon {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .service-card h3 {
-      margin-bottom: 10px;
-      font-size: 21px;
-    }
-
-    .service-card p {
-      color: #6b7280;
-    }
-
-    /* WHY CHOOSE US */
-
-    .why {
-      background: #f8fafc;
-    }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-    }
-
-    .why-card {
-      background: white;
-      border-radius: 14px;
       padding: 28px;
-      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(15,23,42,0.08);
+      transition: 0.3s;
     }
 
-    .why-card h3 {
-      margin-bottom: 8px;
+    .card:hover {
+      transform: translateY(-5px);
     }
 
-    .why-card p {
-      color: #6b7280;
+    .card h3 {
+      color: #0f172a;
+      margin-bottom: 10px;
     }
 
-    /* PROCESS */
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+    .card p {
+      color: #64748b;
     }
 
-    .process-card {
+    .about-section {
+      background: white;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
       text-align: center;
-      padding: 25px;
     }
 
-    .process-number {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 15px;
-      background: #0f766e;
-      color: white;
-      border-radius: 50%;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .process-card h3 {
-      margin-bottom: 8px;
-    }
-
-    .process-card p {
-      color: #6b7280;
-      font-size: 15px;
-    }
-
-    /* PRICING */
-
-    .pricing {
-      background: #f8fafc;
+    .about-content p {
+      margin-bottom: 15px;
+      color: #475569;
     }
 
     .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
     }
 
     .price-card {
       background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 15px;
-      padding: 35px;
+      padding: 30px;
       text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(15,23,42,0.08);
     }
 
     .price-card h3 {
       margin-bottom: 15px;
+      color: #0f172a;
     }
 
     .price {
-      font-size: 35px;
-      font-weight: 800;
-      color: #0f766e;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #0284c7;
       margin-bottom: 10px;
     }
 
     .price-card p {
-      color: #6b7280;
-      margin-bottom: 20px;
+      color: #64748b;
     }
 
-    /* FAQ */
-
-    .faq {
-      max-width: 800px;
-      margin: auto;
+    .process {
+      background: #e0f2fe;
     }
 
-    details {
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin-bottom: 12px;
-      background: white;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 700;
-    }
-
-    details p {
-      color: #6b7280;
-      margin-top: 12px;
-    }
-
-    /* QUOTE */
-
-    .quote-section {
-      background: #ecfdf5;
-    }
-
-    .quote-box {
-      max-width: 850px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      border-radius: 18px;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.07);
-    }
-
-    .form-grid {
+    .process-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .form-group.full {
-      grid-column: 1 / -1;
-    }
-
-    label {
-      font-weight: 700;
-      margin-bottom: 7px;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      font-family: inherit;
-      font-size: 15px;
-    }
-
-    textarea {
-      min-height: 130px;
-      resize: vertical;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: none;
-      border-color: #0f766e;
-    }
-
-    .submit-button {
-      width: 100%;
-      padding: 15px;
-      margin-top: 20px;
-      border: none;
-      border-radius: 9px;
-      background: #0f766e;
-      color: white;
-      font-size: 16px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    .submit-button:hover {
-      background: #115e59;
-    }
-
-    .submit-button:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-
-    .status {
-      margin-top: 18px;
-      padding: 15px;
-      border-radius: 8px;
-      display: none;
-    }
-
-    .status.success,
-    .status.error,
-    .status.loading {
-      display: block;
-    }
-
-    .status.success {
-      background: #dcfce7;
-      color: #166534;
-    }
-
-    .status.error {
-      background: #fee2e2;
-      color: #991b1b;
-    }
-
-    .status.loading {
-      background: #f3f4f6;
-      color: #374151;
-    }
-
-    .form-note {
-      color: #6b7280;
-      font-size: 14px;
-      margin-top: 10px;
-    }
-
-    /* CONTACT */
-
-    .contact {
+    .step {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
       text-align: center;
     }
 
-    .contact-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 25px;
+    .step-number {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      font-size: 1.2rem;
     }
 
-    /* FOOTER */
+    .cta {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #cbd5e1;
+      margin-bottom: 25px;
+    }
 
     footer {
-      background: #111827;
-      color: #d1d5db;
-      padding: 45px 0 25px;
+      background: #020617;
+      color: #cbd5e1;
+      padding: 35px 20px;
     }
 
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 35px;
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
-    footer h3 {
-      color: white;
-      margin-bottom: 12px;
-    }
-
-    footer p {
-      color: #9ca3af;
-    }
-
-    .footer-links {
-      list-style: none;
-    }
-
-    .footer-links li {
+    .footer-brand h3 {
+      color: #38bdf8;
       margin-bottom: 8px;
     }
 
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
     .footer-links a:hover {
-      color: white;
+      color: #38bdf8;
     }
 
     .copyright {
       text-align: center;
+      margin-top: 30px;
       padding-top: 20px;
-      border-top: 1px solid #374151;
-      color: #9ca3af;
-      font-size: 14px;
+      border-top: 1px solid #1e293b;
+      font-size: 0.9rem;
     }
 
-    /* MOBILE */
-
-    @media (max-width: 850px) {
-
+    @media (max-width: 750px) {
       .nav {
         flex-direction: column;
         padding: 15px 0;
       }
 
-      .nav-links {
-        flex-wrap: wrap;
+      nav {
         justify-content: center;
-        gap: 14px;
+        gap: 12px;
       }
-
-      .hero-content {
-        grid-template-columns: 1fr;
-      }
-
-      .services-grid,
-      .pricing-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .process-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
 
       .hero {
-        padding: 60px 0;
-      }
-
-      section {
-        padding: 60px 0;
-      }
-
-      .hero h1 {
-        font-size: 43px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-
-      .services-grid,
-      .pricing-grid,
-      .why-grid,
-      .process-grid,
-      .form-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .quote-box {
-        padding: 25px;
-      }
-
-      .nav-links {
-        font-size: 14px;
+        padding: 75px 20px;
       }
     }
   </style>
@@ -612,930 +338,357 @@
 
 <body>
 
-<!-- HEADER -->
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
 
-<header>
-  <div class="container nav">
+      <a href="index.html" class="logo">SwiftType</a>
 
-    <a href="#home" class="logo">
-      Swift<span>Type</span>
-    </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="quote.html" class="nav-quote">Get a Quote</a>
+      </nav>
 
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#process">How It Works</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li>
-        <a href="#quote" class="nav-button">Get a Quote</a>
-      </li>
-    </ul>
-
-  </div>
-</header>
+    </div>
+  </header>
 
 
-<!-- HERO -->
+  <!-- HERO -->
+  <section class="hero">
 
-<section class="hero" id="home">
+    <div class="container">
 
-  <div class="container hero-content">
-
-    <div>
-
-      <h1>
-        Fast, Accurate &amp;
-        <span>Professional</span>
-        Document Services
-      </h1>
+      <h1>Fast. Accurate. <span>SwiftType.</span></h1>
 
       <p>
-        SwiftType provides reliable typing, data entry, CV formatting,
-        document formatting and transcription services for students,
-        professionals, businesses and organizations.
+        Professional typing, data entry, document formatting,
+        CV formatting and transcription services for individuals,
+        students, professionals, businesses and organizations.
       </p>
 
-      <div class="hero-buttons">
+      <div class="buttons">
 
-        <a href="#quote" class="btn btn-primary">
+        <a href="quote.html" class="btn btn-primary">
+          Request a Quote
+        </a>
+
+        <a href="services.html" class="btn btn-secondary">
+          View Our Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>What We Do</h2>
+        <p>Reliable digital support for your documents and data.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="card">
+          <h3>Document Typing</h3>
+          <p>
+            Convert handwritten, scanned or image-based documents
+            into clean and editable digital files.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Data Entry</h3>
+          <p>
+            Accurate data entry and organization for spreadsheets,
+            forms, records and databases.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>CV Formatting</h3>
+          <p>
+            Professional CV and resume formatting designed to make
+            your application documents clear and polished.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Reports & Assignments</h3>
+          <p>
+            Professional typing and formatting support for reports,
+            assignments, projects and academic documents.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Transcription</h3>
+          <p>
+            Convert clear audio recordings into organized,
+            readable text.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Document Formatting</h3>
+          <p>
+            Improve the layout, structure and presentation of
+            professional documents.
+          </p>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:35px;">
+        <a href="services.html" class="btn btn-primary">
+          See All Services
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about-section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Why SwiftType?</h2>
+        <p>Simple, reliable and professional document support.</p>
+      </div>
+
+      <div class="about-content">
+
+        <p>
+          SwiftType is built to help individuals, students,
+          professionals, businesses and organizations save time
+          by outsourcing typing and document-related tasks.
+        </p>
+
+        <p>
+          Our goal is simple: deliver accurate work, communicate
+          clearly and make the process easy for every client.
+        </p>
+
+        <a
+          href="about.html"
+          class="btn btn-primary"
+          style="margin-top:15px;"
+        >
+          Learn More About Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRICING -->
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Starting Prices</h2>
+        <p>Simple pricing with custom quotes available.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <h3>Standard Typing</h3>
+          <div class="price">GH₵5+</div>
+          <p>Per page</p>
+        </div>
+
+        <div class="price-card">
+          <h3>Handwritten Typing</h3>
+          <div class="price">GH₵8+</div>
+          <p>Per page</p>
+        </div>
+
+        <div class="price-card">
+          <h3>CV Formatting</h3>
+          <div class="price">GH₵30+</div>
+          <p>Per CV</p>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:35px;">
+        <a href="pricing.html" class="btn btn-primary">
+          View Full Pricing
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+  <section class="process">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>How It Works</h2>
+
+        <p>
+          Getting your document completed is simple.
+        </p>
+
+      </div>
+
+      <div class="process-grid">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Request</h3>
+          <p>
+            Tell us what service you need using our quote form.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Discuss</h3>
+          <p>
+            We review your request and confirm the details and price.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Work</h3>
+          <p>
+            We complete your typing, formatting or data task.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Receive</h3>
+          <p>
+            Your completed document is delivered to you.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Need a Document Typed?</h2>
+
+      <p>
+        Send us your requirements and get a quote from SwiftType.
+      </p>
+
+      <div class="buttons">
+
+        <a href="quote.html" class="btn btn-primary">
           Request a Quote
         </a>
 
         <a
           href="https://wa.me/233592416096"
-          target="_blank"
           class="btn btn-secondary"
+          target="_blank"
         >
-          Chat on WhatsApp
+          WhatsApp Us
         </a>
 
       </div>
 
     </div>
 
+  </section>
 
-    <div class="hero-card">
 
-      <h3>Why SwiftType?</h3>
+  <!-- FOOTER -->
+  <footer>
 
-      <div class="hero-card-item">
-        <div>✓</div>
-        <div>
-          <strong>Fast Turnaround</strong>
-          <span>We work to deliver your documents on time.</span>
-        </div>
-      </div>
+    <div class="container">
 
-      <div class="hero-card-item">
-        <div>✓</div>
-        <div>
-          <strong>Accurate Work</strong>
-          <span>Careful typing, formatting and data handling.</span>
-        </div>
-      </div>
+      <div class="footer-content">
 
-      <div class="hero-card-item">
-        <div>✓</div>
-        <div>
-          <strong>Affordable Pricing</strong>
-          <span>Simple pricing designed for different budgets.</span>
-        </div>
-      </div>
+        <div class="footer-brand">
 
-      <div class="hero-card-item">
-        <div>✓</div>
-        <div>
-          <strong>Confidentiality</strong>
-          <span>Your documents and information are handled responsibly.</span>
-        </div>
-      </div>
+          <h3>SwiftType</h3>
 
-    </div>
+          <p>
+            Fast, accurate and reliable typing & data services.
+          </p>
 
-  </div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section id="services">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Our Services</h2>
-
-      <p>
-        Professional document and administrative support
-        for individuals, students and organizations.
-      </p>
-
-    </div>
-
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <div class="service-icon">⌨️</div>
-        <h3>Document Typing</h3>
-        <p>
-          Convert handwritten, scanned or image-based documents
-          into clean, editable digital documents.
-        </p>
-      </div>
-
-
-      <div class="service-card">
-        <div class="service-icon">📊</div>
-        <h3>Data Entry</h3>
-        <p>
-          Accurate data entry and organization for spreadsheets,
-          lists, records and other digital databases.
-        </p>
-      </div>
-
-
-      <div class="service-card">
-        <div class="service-icon">📄</div>
-        <h3>CV &amp; Resume Formatting</h3>
-        <p>
-          Professional formatting and presentation to make your
-          CV clear, organized and easy to read.
-        </p>
-      </div>
-
-
-      <div class="service-card">
-        <div class="service-icon">📝</div>
-        <h3>Reports &amp; Assignments</h3>
-        <p>
-          Typing, formatting and organizing academic and
-          professional documents.
-        </p>
-      </div>
-
-
-      <div class="service-card">
-        <div class="service-icon">🎧</div>
-        <h3>Basic Transcription</h3>
-        <p>
-          Convert clear audio recordings into organized written
-          documents.
-        </p>
-      </div>
-
-
-      <div class="service-card">
-        <div class="service-icon">📑</div>
-        <h3>Document Formatting</h3>
-        <p>
-          Improve the layout, structure and presentation of
-          Word documents, reports and other files.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- WHY CHOOSE US -->
-
-<section class="why">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Why Choose SwiftType?</h2>
-
-      <p>
-        We focus on making document work simple, convenient
-        and reliable.
-      </p>
-
-    </div>
-
-
-    <div class="why-grid">
-
-      <div class="why-card">
-
-        <h3>⚡ Fast Service</h3>
-
-        <p>
-          We aim to complete projects within the agreed
-          turnaround time.
-        </p>
-
-      </div>
-
-
-      <div class="why-card">
-
-        <h3>🎯 Attention to Detail</h3>
-
-        <p>
-          We carefully review documents for typing,
-          formatting and presentation quality.
-        </p>
-
-      </div>
-
-
-      <div class="why-card">
-
-        <h3>💰 Affordable</h3>
-
-        <p>
-          Our services are designed to remain accessible
-          for students, individuals and small businesses.
-        </p>
-
-      </div>
-
-
-      <div class="why-card">
-
-        <h3>🔒 Confidential</h3>
-
-        <p>
-          We respect the privacy of documents and information
-          provided for our services.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- PROCESS -->
-
-<section id="process">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>How It Works</h2>
-
-      <p>
-        Getting your document completed is simple.
-      </p>
-
-    </div>
-
-
-    <div class="process-grid">
-
-      <div class="process-card">
-
-        <div class="process-number">1</div>
-
-        <h3>Send Your Request</h3>
-
-        <p>
-          Tell us what you need completed.
-        </p>
-
-      </div>
-
-
-      <div class="process-card">
-
-        <div class="process-number">2</div>
-
-        <h3>Get a Quote</h3>
-
-        <p>
-          We review your request and provide pricing.
-        </p>
-
-      </div>
-
-
-      <div class="process-card">
-
-        <div class="process-number">3</div>
-
-        <h3>Confirm &amp; Pay</h3>
-
-        <p>
-          Once the details are agreed, we begin your project.
-        </p>
-
-      </div>
-
-
-      <div class="process-card">
-
-        <div class="process-number">4</div>
-
-        <h3>Receive Your Work</h3>
-
-        <p>
-          Your completed document is delivered digitally.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- PRICING -->
-
-<section class="pricing" id="pricing">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Starting Prices</h2>
-
-      <p>
-        Final pricing depends on document length,
-        complexity and turnaround time.
-      </p>
-
-    </div>
-
-
-    <div class="pricing-grid">
-
-      <div class="price-card">
-
-        <h3>Standard Typing</h3>
-
-        <div class="price">
-          GH₵5+
-        </div>
-
-        <p>per page</p>
-
-        <a href="#quote" class="btn btn-primary">
-          Get a Quote
-        </a>
-
-      </div>
-
-
-      <div class="price-card">
-
-        <h3>Handwritten Typing</h3>
-
-        <div class="price">
-          GH₵8+
-        </div>
-
-        <p>per page</p>
-
-        <a href="#quote" class="btn btn-primary">
-          Get a Quote
-        </a>
-
-      </div>
-
-
-      <div class="price-card">
-
-        <h3>CV Formatting</h3>
-
-        <div class="price">
-          GH₵30+
-        </div>
-
-        <p>per CV</p>
-
-        <a href="#quote" class="btn btn-primary">
-          Get a Quote
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- FAQ -->
-
-<section id="faq">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Frequently Asked Questions</h2>
-
-      <p>
-        Some common questions about SwiftType.
-      </p>
-
-    </div>
-
-
-    <div class="faq">
-
-      <details>
-
-        <summary>How do I request a service?</summary>
-
-        <p>
-          Complete the quote form on this website or contact
-          SwiftType directly through WhatsApp.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>How do I send my documents?</summary>
-
-        <p>
-          After submitting your quote request, you can send
-          your document through WhatsApp or email.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>How quickly can my work be completed?</summary>
-
-        <p>
-          Turnaround depends on the size and complexity of
-          your project. We will confirm the expected delivery
-          time when providing your quote.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>Do you work with businesses?</summary>
-
-        <p>
-          Yes. SwiftType can support individuals, students,
-          businesses, schools, churches and other organizations.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>Is my information confidential?</summary>
-
-        <p>
-          We treat documents and information provided for
-          our services with appropriate confidentiality.
-        </p>
-
-      </details>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- QUOTE FORM -->
-
-<section class="quote-section" id="quote">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Request a Quote</h2>
-
-      <p>
-        Tell us what you need and we'll get back to you.
-      </p>
-
-    </div>
-
-
-    <div class="quote-box">
-
-      <form
-        id="quoteForm"
-        action="https://formspree.io/f/mvkgbdld"
-        method="POST"
-      >
-
-        <div class="form-grid">
-
-
-          <div class="form-group">
-
-            <label for="name">
-              Full Name
-            </label>
-
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              placeholder="Your full name"
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="email">
-              Email Address
-            </label>
-
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              placeholder="you@example.com"
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="phone">
-              WhatsApp / Phone
-            </label>
-
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              required
-              placeholder="Your phone number"
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="service">
-              Service Needed
-            </label>
-
-            <select
-              id="service"
-              name="service"
-              required
-            >
-
-              <option value="">
-                Select a service
-              </option>
-
-              <option>
-                Document Typing
-              </option>
-
-              <option>
-                Data Entry
-              </option>
-
-              <option>
-                CV & Resume Formatting
-              </option>
-
-              <option>
-                Reports & Assignments
-              </option>
-
-              <option>
-                Basic Transcription
-              </option>
-
-              <option>
-                Document Formatting
-              </option>
-
-              <option>
-                Other
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="pages">
-              Estimated Pages
-            </label>
-
-            <input
-              id="pages"
-              name="pages"
-              type="text"
-              placeholder="e.g. 10 pages"
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="deadline">
-              Preferred Deadline
-            </label>
-
-            <input
-              id="deadline"
-              name="deadline"
-              type="text"
-              placeholder="e.g. 2 days"
-            >
-
-          </div>
-
-
-          <div class="form-group full">
-
-            <label for="message">
-              Project Details
-            </label>
-
-            <textarea
-              id="message"
-              name="message"
-              required
-              placeholder="Tell us about the document or service you need..."
-            ></textarea>
-
-          </div>
-
-        </div>
-
-
-        <input
-          type="hidden"
-          name="_subject"
-          value="New SwiftType Quote Request"
-        >
-
-
-        <button
-          type="submit"
-          class="submit-button"
-          id="submitButton"
-        >
-          Submit Quote Request
-        </button>
-
-
-        <p class="form-note">
-          After submitting your request, you can send your
-          document through WhatsApp or email.
-        </p>
-
-
-        <div
-          id="status"
-          class="status"
-        ></div>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Let's Work Together</h2>
-
-      <p>
-        Need typing, data entry, formatting or document support?
-        Contact SwiftType today.
-      </p>
-
-    </div>
-
-
-    <div class="contact-buttons">
-
-      <a
-        href="https://wa.me/233592416096"
-        target="_blank"
-        class="btn btn-primary"
-      >
-        WhatsApp Us
-      </a>
-
-
-      <a
-        href="mailto:gabrielquansah4@gmail.com"
-        class="btn btn-secondary"
-      >
-        Email SwiftType
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-
-        <h3>SwiftType</h3>
-
-        <p>
-          Fast, accurate and professional typing,
-          data entry and document support services.
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <h3>Quick Links</h3>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="#home">Home</a>
-          </li>
-
-          <li>
-            <a href="#services">Services</a>
-          </li>
-
-          <li>
-            <a href="#pricing">Pricing</a>
-          </li>
-
-          <li>
-            <a href="#quote">Get a Quote</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <div>
-
-        <h3>Contact</h3>
-
-        <ul class="footer-links">
-
-          <li>
+          <p style="margin-top:8px;">
+            Email:
             <a href="mailto:gabrielquansah4@gmail.com">
-              Email
+              gabrielquansah4@gmail.com
             </a>
-          </li>
+          </p>
 
-          <li>
+          <p>
+            WhatsApp:
             <a
               href="https://wa.me/233592416096"
               target="_blank"
             >
-              WhatsApp
+              +233 59 241 6096
             </a>
-          </li>
+          </p>
 
-        </ul>
+        </div>
+
+
+        <div class="footer-links">
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="quote.html">Get a Quote</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="copyright">
+
+        © 2026 SwiftType. All rights reserved.
 
       </div>
 
     </div>
 
-
-    <div class="copyright">
-
-      © 2026 SwiftType. All rights reserved.
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-<script>
-
-  const form = document.getElementById("quoteForm");
-  const submitButton = document.getElementById("submitButton");
-  const status = document.getElementById("status");
-
-  form.addEventListener("submit", async function(event) {
-
-    event.preventDefault();
-
-    status.className = "status loading";
-    status.textContent = "Sending your quote request...";
-
-    submitButton.disabled = true;
-    submitButton.textContent = "Sending...";
-
-    try {
-
-      const formData = new FormData(form);
-
-      const response = await fetch(
-        "https://formspree.io/f/mvkgbdld",
-        {
-          method: "POST",
-          body: formData,
-          headers: {
-            "Accept": "application/json"
-          }
-        }
-      );
-
-
-      if (response.ok) {
-
-        status.className = "status success";
-
-        status.innerHTML =
-          "<strong>Request received!</strong><br>" +
-          "Thank you for contacting SwiftType. " +
-          "We have received your request and will review it " +
-          "and contact you shortly.";
-
-        form.reset();
-
-        submitButton.disabled = false;
-        submitButton.textContent = "Submit Quote Request";
-
-        status.scrollIntoView({
-          behavior: "smooth",
-          block: "center"
-        });
-
-      } else {
-
-        throw new Error("Submission failed");
-
-      }
-
-    } catch (error) {
-
-      console.error(error);
-
-      status.className = "status error";
-
-      status.innerHTML =
-        "<strong>We couldn't submit the request.</strong><br>" +
-        "Please try again or contact us directly on WhatsApp.";
-
-      submitButton.disabled = false;
-      submitButton.textContent = "Submit Quote Request";
-
-    }
-
-  });
-
-</script>
+  </footer>
 
 </body>
 </html>
