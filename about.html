@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About SwiftType | Professional Document Services</title>
+
+  <meta name="description"
+        content="Learn about SwiftType and our professional typing, data entry, document formatting and administrative support services.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0f766e;
+    }
+
+    .logo span {
+      color: #111827;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .nav-links a:hover {
+      color: #0f766e;
+    }
+
+    .nav-button {
+      background: #0f766e;
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 8px;
+    }
+
+    /* PAGE HERO */
+
+    .page-hero {
+      background: linear-gradient(135deg, #ecfdf5, #f8fafc);
+      padding: 85px 0;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(40px, 6vw, 58px);
+      color: #111827;
+      margin-bottom: 18px;
+    }
+
+    .page-hero h1 span {
+      color: #0f766e;
+    }
+
+    .page-hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      color: #4b5563;
+    }
+
+    /* ABOUT */
+
+    .about-section {
+      padding: 80px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 18px;
+      color: #111827;
+    }
+
+    .about-text h2 span {
+      color: #0f766e;
+    }
+
+    .about-text p {
+      color: #4b5563;
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+
+    .about-card {
+      background: #0f766e;
+      color: white;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    .about-card h3 {
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .about-card p {
+      color: #d1fae5;
+    }
+
+    /* VALUES */
+
+    .values {
+      background: #f8fafc;
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .section-heading h2 {
+      font-size: 38px;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: #6b7280;
+      font-size: 17px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .value-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 30px;
+    }
+
+    .value-icon {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+
+    .value-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      color: #6b7280;
+    }
+
+    /* WHO WE SERVE */
+
+    .serve-section {
+      padding: 80px 0;
+    }
+
+    .serve-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .serve-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 25px;
+      background: white;
+    }
+
+    .serve-card h3 {
+      margin-bottom: 7px;
+    }
+
+    .serve-card p {
+      color: #6b7280;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: #ecfdf5;
+      padding: 75px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      color: #4b5563;
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 23px;
+      border-radius: 9px;
+      font-weight: 700;
+      border: 2px solid transparent;
+      margin: 5px;
+    }
+
+    .btn-primary {
+      background: #0f766e;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #115e59;
+    }
+
+    .btn-secondary {
+      border-color: #0f766e;
+      color: #0f766e;
+      background: white;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      color: #9ca3af;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .nav {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .page-hero {
+        padding: 60px 0;
+      }
+
+      .about-section,
+      .values,
+      .serve-section {
+        padding: 60px 0;
+      }
+
+      .values-grid,
+      .serve-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-hero h1 {
+        font-size: 42px;
+      }
+
+      .nav-links {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      Swift<span>Type</span>
+    </a>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="about.html">About</a>
+      </li>
+
+      <li>
+        <a href="index.html#services">Services</a>
+      </li>
+
+      <li>
+        <a href="index.html#pricing">Pricing</a>
+      </li>
+
+      <li>
+        <a href="index.html#faq">FAQ</a>
+      </li>
+
+      <li>
+        <a href="index.html#quote" class="nav-button">
+          Get a Quote
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+
+  <div class="container">
+
+    <h1>
+      About <span>SwiftType</span>
+    </h1>
+
+    <p>
+      Reliable digital document and administrative support
+      designed to make your work easier.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about-section">
+
+  <div class="container about-grid">
+
+    <div class="about-text">
+
+      <h2>
+        Making Document Work
+        <span>Simple</span>
+      </h2>
+
+      <p>
+        SwiftType is a professional digital document services
+        business focused on helping individuals, students,
+        professionals and organizations handle their typing
+        and document-related tasks efficiently.
+      </p>
+
+      <p>
+        From typing handwritten documents to formatting CVs,
+        entering data and preparing reports, our goal is to
+        provide a convenient service that saves clients time
+        and effort.
+      </p>
+
+      <p>
+        We understand that document work can be time-consuming.
+        SwiftType exists to provide a simple way for clients
+        to send their requirements, receive a quote and have
+        their work completed digitally.
+      </p>
+
+    </div>
+
+
+    <div class="about-card">
+
+      <h3>Our Mission</h3>
+
+      <p>
+        To provide accessible, reliable and professional
+        document support while maintaining accuracy,
+        confidentiality and timely delivery.
+      </p>
+
+      <br>
+
+      <h3>Our Vision</h3>
+
+      <p>
+        To grow SwiftType into a trusted digital support
+        service for individuals, businesses, schools and
+        organizations.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- VALUES -->
+
+<section class="values">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>What We Value</h2>
+
+      <p>
+        The principles behind the way we work.
+      </p>
+
+    </div>
+
+
+    <div class="values-grid">
+
+      <div class="value-card">
+
+        <div class="value-icon">🎯</div>
+
+        <h3>Accuracy</h3>
+
+        <p>
+          We pay attention to details and aim to deliver
+          clean and properly formatted documents.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">⚡</div>
+
+        <h3>Efficiency</h3>
+
+        <p>
+          We understand the importance of deadlines and
+          work toward agreed delivery times.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">🔒</div>
+
+        <h3>Confidentiality</h3>
+
+        <p>
+          Client information and documents should be treated
+          with appropriate care and discretion.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">💰</div>
+
+        <h3>Affordability</h3>
+
+        <p>
+          We aim to provide useful document services at
+          reasonable prices.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">🤝</div>
+
+        <h3>Professionalism</h3>
+
+        <p>
+          We communicate clearly and work to provide a
+          professional client experience.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">📈</div>
+
+        <h3>Continuous Improvement</h3>
+
+        <p>
+          We continue improving our services and digital
+          tools as the business grows.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHO WE SERVE -->
+
+<section class="serve-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>Who We Serve</h2>
+
+      <p>
+        SwiftType can support a wide range of clients.
+      </p>
+
+    </div>
+
+
+    <div class="serve-grid">
+
+      <div class="serve-card">
+
+        <h3>🎓 Students</h3>
+
+        <p>
+          Typing assignments, reports, projects and other
+          academic documents.
+        </p>
+
+      </div>
+
+
+      <div class="serve-card">
+
+        <h3>👨‍💼 Professionals</h3>
+
+        <p>
+          CV formatting, reports, letters and other
+          professional documents.
+        </p>
+
+      </div>
+
+
+      <div class="serve-card">
+
+        <h3>🏢 Businesses</h3>
+
+        <p>
+          Data entry, document formatting and administrative
+          support for business operations.
+        </p>
+
+      </div>
+
+
+      <div class="serve-card">
+
+        <h3>🏫 Schools &amp; Organizations</h3>
+
+        <p>
+          Document preparation, data entry and administrative
+          support for organizations.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Need Professional Document Support?</h2>
+
+    <p>
+      Tell us what you need and let SwiftType help you
+      get it done.
+    </p>
+
+    <a
+      href="index.html#quote"
+      class="btn btn-primary"
+    >
+      Request a Quote
+    </a>
+
+    <a
+      href="https://wa.me/233592416096"
+      target="_blank"
+      class="btn btn-secondary"
+    >
+      WhatsApp Us
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>SwiftType</h3>
+
+        <p>
+          Fast, accurate and professional typing,
+          data entry and document support services.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Quick Links</h3>
+
+        <ul class="footer-links">
+
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="index.html#services">Services</a>
+          </li>
+
+          <li>
+            <a href="index.html#quote">Get a Quote</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>Contact</h3>
+
+        <ul class="footer-links">
+
+          <li>
+            <a href="mailto:gabrielquansah4@gmail.com">
+              Email
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://wa.me/233592416096"
+              target="_blank"
+            >
+              WhatsApp
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 SwiftType. All rights reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
